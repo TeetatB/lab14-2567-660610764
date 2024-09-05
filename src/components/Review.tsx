@@ -1,0 +1,19 @@
+import {Title, Rating, Textarea, Button} from "@mantine/core";
+
+export default function Review(){
+    return (
+      <>
+      <Title  order ={4} mt = "sm">Your rating</Title>
+      <Rating defaultValue= {0} size="lg"/>
+      <Textarea 
+        label = "Your review"
+        placeholder="Do you enjoy eating?"
+        mt = "md"
+        fz="0.875rem"
+        rows={3}
+      />
+      <Button variant="filled" color="orange" size="sm" mt="sm" >Submit Review</Button>
+      
+      </>
+    );
+}
